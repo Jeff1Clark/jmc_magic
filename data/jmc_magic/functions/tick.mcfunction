@@ -4,6 +4,7 @@ scoreboard players set @a[tag=skull_summoner] skull_timer 100
 execute as @a[scores={skull_timer=100..}] run tag @s remove skull_summoner
 
 #timed events
+execute as @a[scores={skull_timer=1..}] at @s anchored eyes facing entity @s eyes positioned ^ ^ ^0.7 run function jmc_magic:c1
 execute as @a[scores={skull_timer=100}] at @s run playsound block.conduit.activate player @s ~ ~ ~
 
 # resettimg skull_timer
