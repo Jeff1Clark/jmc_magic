@@ -1,1 +1,0 @@
-scoreboard players set @a[scores={skull_summon=1..,skull_timer=..0}] skull_timer 60
