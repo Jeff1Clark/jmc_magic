@@ -18,7 +18,7 @@ scoreboard players operation .xSkull SkullRot *= .hSkull SkullRot
 scoreboard players operation .zSkull SkullRot *= .hSkull SkullRot
 
 # Set vector components as the skull's "power"
-summon minecraft:wither_skull
+$summon minecraft:wither_skull ~ ~ ~ {Owner:$(UUID)}
 execute store result entity @e[type=minecraft:wither_skull,sort=nearest,limit=1] power[0] double -0.0000002 run scoreboard players get .xSkull SkullRot
 execute store result entity @e[type=minecraft:wither_skull,sort=nearest,limit=1] power[1] double -0.0000000002 run scoreboard players get .ySkull SkullRot
 execute store result entity @e[type=minecraft:wither_skull,sort=nearest,limit=1] power[2] double 0.0000002 run scoreboard players get .zSkull SkullRot

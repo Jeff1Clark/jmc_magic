@@ -1,5 +1,5 @@
 # Initialize steps
-scoreboard players set @s steps 64
+scoreboard players set @s steps 32
 
 # Move the ray
 execute at @s run function jmc_magic:ray/move
