@@ -1,7 +1,7 @@
 {
     "pack": {
-        "pack_format": 21,
-        "description": "jmc_magic"
+        "pack_format": 18,
+        "description": "Jeff M. Clark's meme-based magic book - 0.0.1a"
     }
     
 }
